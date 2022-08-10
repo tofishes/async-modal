@@ -1,0 +1,42 @@
+@import '~antd/es/modal/style/index';
+
+@-gutter: 24px;
+@-gutter-sm: 16px;
+
+.async-modal {
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    margin: 0 0 @-gutter-sm;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &-body {
+    padding: 0;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: @-gutter 0 0;
+
+    > * {
+      margin-left: @-gutter-sm;
+    }
+  }
+
+  .@{ant-prefix}-modal-body {
+    padding: calc(@-gutter / 2) @-gutter @-gutter !important;
+  }
+
+  .@{ant-prefix}-modal-confirm-btns {
+    display: none;
+  }
+
+  .@{ant-prefix}-modal-confirm-body .@{ant-prefix}-modal-confirm-content {
+    margin-top: 8px !important;
+  }
+}
